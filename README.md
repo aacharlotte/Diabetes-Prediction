@@ -70,7 +70,3 @@ Build a classification model that ensures that both classes (diabetic and non-di
 **License**: MIT
 
 ---
-
-> _"Data tells the story of climate change. Visuals let us hear it clearly."_
-
----
