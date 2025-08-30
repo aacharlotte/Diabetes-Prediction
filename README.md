@@ -1,6 +1,6 @@
 # Diabetes Prediction
 
-The CDC Diabetes Health Indicators dataset is used for this project to illustrate how I go about model selection. I first do predictions with a couple of untuned models, using the train test data. I then balance the dataset, do parameter tuning, apply the best thresholds, and use PCA (using different variation retantion)
+For this project, I use the CDC Diabetes Health Indicators dataset to illustrate my approach to model selection. I first do predictions with a baseline model and a couple of untuned models using the train test data. I also balance the dataset (given that there is a class imbalance), do hyperparameter tuning, apply the best thresholds, and use PCA (using different variation retention). The best model is selected depending on the performance metrics ideal for the problem at hand. For this particular project, the best-performing model is determined based on the F1 score since the aim is to ensure correct prediction of diabetic cases to target them for medication. F1 score gives a balace between precision and recall.  
 
 
 ### Tools and Libraries Used
@@ -47,7 +47,7 @@ Build a classification model that ensures that both classes (diabetic and non-di
 
 **Key Observations:**
 - The baseline model provided performance reference and presented data challenges to be handled with advanced models.
-- The main challenge presented was poor performance regarding predicting diabetic cases. This is mainly due to class imbalance.
+- The main challenge presented was poor performance regarding predicting diabetic cases. The models performed well in predicting non-diabetic cases but predicted the diabetic cases poorly. This is mainly due to class imbalance. The baseline model presented the need for improving model performance with class balance, hyperparameter tuning, and threshold tuning
 ---
 
 ### Best model: Random Forest
